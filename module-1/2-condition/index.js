@@ -167,3 +167,5 @@ for (let p = 1; p <= 10; p++) {
   }
   console.log("Angka ganjil:", p);
 }
+
+console.log("Loop selesai");
