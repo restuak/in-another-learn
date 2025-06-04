@@ -1,19 +1,23 @@
 // Kelas Player
 class Player {
-  constructor(name) {
+  name: string;
+  health: number;
+  power: number;
+
+  constructor(name: string) {
     this.name = name;
     this.health = 100;
     this.power = 10;
   }
 
   // Mengurangi health saat terkena hit
-  hit(power) {
+  hit(power: number): void {
     this.health -= power;
     console.log(`${this.name} terkena serangan sebesar ${power} poin!`);
   }
 
   // Menggunakan item untuk menambah health atau power
-  useItem(item) {
+  useItem(item: { health: number; power: number }): void {
     if (item.health > 0) {
       console.log(`${this.name} mendapatkan item kesehatan +${item.health}`);
     }
@@ -27,59 +31,62 @@ class Player {
   }
 
   // Menampilkan status pemain
-  showStatus() {
+  showStatus(): void {
     console.log(
       `${this.name} (Health => ${this.health}, Power => ${this.power})`
     );
   }
 
   // Mengecek apakah masih hidup
-  isAlive() {
+  isAlive(): boolean {
     return this.health > 0;
   }
 }
 
 // Kelas ShootingGame
 class ShootingGame {
-  constructor(player1, player2) {
+  player1: Player;
+  player2: Player;
+
+  constructor(player1: Player, player2: Player) {
     this.player1 = player1;
     this.player2 = player2;
   }
 
   // Menghasilkan item secara acak
-  getRandomItem() {
-    const health = Math.random() < 0.5 ? 0 : 10;
-    const power = Math.random() < 0.5 ? 0 : 10;
+  getRandomItem(): { health: number; power: number } {
+    const health: number = Math.random() < 0.5 ? 0 : 10;
+    const power: number = Math.random() < 0.5 ? 0 : 10;
     return { health, power };
   }
 
   // Memulai permainan
-  start() {
-    let turn = 1;
+  start(): void {
+    let turn: number = 1;
     console.log("=== PERMAINAN DIMULAI ===");
 
-    while (this.player1.isAlive() && this.player2.isAlive() > 0) {
-      console.log(`PERMAINAN KE-${turn}`);
+    while (this.player1.isAlive() && this.player2.isAlive()) {
+      console.log(`\n--- GILIRAN KE-${turn} ---`);
 
       // Menampilkan status sebelum item
-      console.log("Status sebelum mendapatkan item:");
+      console.log("\nStatus sebelum mendapatkan item:");
       this.player1.showStatus();
       this.player2.showStatus();
 
       // Pemain mendapatkan item
-      const item1 = this.getRandomItem();
-      const item2 = this.getRandomItem();
-      console.log(`Item yang didapatkan:`);
+      const item1: { health: number; power: number } = this.getRandomItem();
+      const item2: { health: number; power: number } = this.getRandomItem();
+      console.log(`\nItem yang didapatkan:`);
       this.player1.useItem(item1);
       this.player2.useItem(item2);
 
       // Serangan dimulai
-      console.log(`Serangan dimulai:`);
+      console.log(`\nSerangan dimulai:`);
       this.player2.hit(this.player1.power);
       this.player1.hit(this.player2.power);
 
       // Menampilkan status setelah serangan
-      console.log("Status setelah serangan:");
+      console.log("\nStatus setelah serangan:");
       this.player1.showStatus();
       this.player2.showStatus();
 
@@ -100,8 +107,8 @@ class ShootingGame {
 }
 
 // Inisialisasi dan jalankan permainan
-const playerA = new Player("Player A");
-const playerB = new Player("Player B");
+const playerA: Player = new Player("Player A");
+const playerB: Player = new Player("Player B");
 
-const game = new ShootingGame(playerA, playerB);
+const game: ShootingGame = new ShootingGame(playerA, playerB);
 game.start();

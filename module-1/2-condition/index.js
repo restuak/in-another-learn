@@ -1,5 +1,5 @@
 // COMPARISON OPERATORS
-let bool = true;
+let boool = true;
 
 // EQUAL TO
 console.log("1 == 1", 1 == 1); // true
@@ -53,11 +53,11 @@ if (kondisi === "B") {
 }
 
 // TERNARY OPERATOR
-let nilai = 75;
-let hasil = nilai >= 75 ? "Lulus" : "Tidak Lulus";
+let nilai2 = 75;
+let hasil = nilai2 >= 75 ? "Lulus" : "Tidak Lulus";
 console.log("Hasil:", hasil);
 
-console.log(nilai === 75 ? "Lulus" : "Tidak Lulus"); // Output: "Lulus"
+console.log(nilai2 === 75 ? "Lulus" : "Tidak Lulus"); // Output: "Lulus"
 // SWITCH STATEMENT
 let hari = 3;
 switch (hari) {
@@ -102,21 +102,21 @@ console.log(Boolean(null));
 console.log(Boolean(undefined));
 console.log(Boolean(NaN)); // Output: false
 
-let input = "Hello";
-input = "";
-input = null;
-input = undefined;
-input = 6782;
-input = 0;
-if (input) {
-  console.log(`Input kamu ${input}`);
+let input2 = "Hello";
+input2 = "";
+input2 = null;
+input2 = undefined;
+input2 = 6782;
+input2 = 0;
+if (input2) {
+  console.log(`Input kamu ${input2}`);
 } else {
   console.log("Input belum ada");
 }
-if (!input) {
+if (!input2) {
   console.log("Input belum ada");
 } else {
-  console.log(`Input kamu ${input}`);
+  console.log(`Input kamu ${input2}`);
 }
 //=================================================================================================
 //LOOPING

@@ -56,6 +56,7 @@ console.log(model);
 // Polymorphism
 //
 
+// Encapsulation
 class Sepatu {
   nama;
   harga;
@@ -89,6 +90,7 @@ class Car {
     this.#color = color;
   }
 
+  // Abstraction
   #setCustomColor(bool) {
     this.#customColor = bool;
   }
@@ -120,6 +122,7 @@ console.log(BMW.getColor());
 const BMW2 = new Car("BMW", 50000, "IX", "white");
 console.log(BMW2.sellCar());
 
+// Inheritance
 class Product {
   name;
   price;
@@ -165,6 +168,8 @@ console.log(tv);
 const buku = new Buku("Harry Potter", 50000, "JK Rowling", "Matahari");
 console.log(buku);
 
+
+// Polymorphism
 class Animal {
   #tooth;
 
