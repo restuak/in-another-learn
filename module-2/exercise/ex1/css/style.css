@@ -1,0 +1,144 @@
+@import url("https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700;800&display=swap");
+
+/* COLOR PALLETE */
+.yellow-col {
+  background-color: #f4d04e;
+}
+.gray-950 {
+  background-color: #111111;
+}
+
+.gray-500 {
+  background-color: #6b7280;
+}
+
+.white {
+  background-color: #ffffff;
+}
+
+.posisi {
+  justify-items: center;
+  padding: 50%;
+}
+
+/* TEXT PRESET */
+.text-1 {
+  font-family: Figtree;
+  font-size: 24px;
+  line-height: 150%;
+  letter-spacing: 0%;
+  color: gray-950;
+}
+.text-2 {
+  font-family: Figtree;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0%;
+  color: gray-950;
+}
+.text-3 {
+  font-family: Figtree;
+  font-size: 14px;
+  line-height: 150%;
+  letter-spacing: 0%;
+  color: gray-950;
+}
+.text-3-bold {
+  font-family: Figtree;
+  font-size: 16px;
+  font-style: bold;
+  line-height: 150%;
+  letter-spacing: 0%;
+  color: #111111;
+}
+
+/* BODY */
+body {
+  background-color: yellow-col;
+}
+
+/* KONTAINER */
+.container {
+  display: grid;
+  background-color: #ffffff;
+  border: 1px solid #111111;
+  box-shadow: 8px 8px 0px 0px #000000;
+  width: 280px;
+  height: 501px;
+  top: 156px;
+  left: 24px;
+  gap: 24px;
+  border-radius: 20px;
+  border-width: 1px;
+  padding: 24px;
+}
+
+.blog-image {
+  width: 279;
+  height: 200;
+  border-radius: 10px;
+}
+
+.content: {
+  width: 279;
+  height: 173;
+  gap: 12px;
+}
+
+.content-tag {
+  background-color: #f4d04e;
+  width: 70px;
+  height: 26px;
+  border-radius: 4px;
+  padding-top: 4px;
+  padding-right: 0px;
+  padding-bottom: 4px;
+  padding-left: 12px;
+}
+
+.content-tag-text {
+  font-family: Figtree;
+  font-weight: 800;
+  font-size: 14px;
+  line-height: 0%;
+  letter-spacing: 0%;
+}
+
+.content-date {
+  font-family: Figtree;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 150%;
+  letter-spacing: 0%;
+}
+
+.content-title {
+  font-family: Figtree;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 150%;
+  letter-spacing: 0%;
+}
+
+.content-isi {
+  font-family: Figtree;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 150%;
+  letter-spacing: 0%;
+}
+
+.author {
+  display: flex;
+  align-items: center;
+  width: 129;
+  height: 32;
+  gap: 12px;
+}
+
+.author-name {
+  font-family: Figtree;
+  font-weight: 800;
+  line-height: 150%;
+  letter-spacing: 0%;
+}
