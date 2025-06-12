@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+body {
+  background-color: #f2eae2;
+  justify-items: center;
+  padding-top: 5%;
+}
+
+.container {
+  background-color: #ffffff;
+  width: 343px;
+  height: 611px;
+  top: 28px;
+  left: 16px;
+  border-radius: 10px;
+}
+
+.bitmap {
+  background-color: #ffffff;
+  width: 343px;
+  height: 240px;
+}
+
+.content {
+  padding-top: 15px;
+  padding-bottom: 10px;
+  padding-left: 25px;
+  padding-right: 25px;
+  border-radius: 10px;
+}
+
+.category {
+  color: #6c7289;
+  font-family: Montserrat;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 100%;
+  letter-spacing: 5px;
+}
+
+.title {
+  color: #1c232b;
+  font-family: Fraunces;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 32px;
+  letter-spacing: 0px;
+}
+
+.desc {
+  color: #6c7289;
+  font-family: Montserrat;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 23px;
+  letter-spacing: 0px;
+}
+
+.price {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  align-items: center;
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+
+.price-bef {
+  display: contents;
+  color: #6c7289;
+  font-family: Montserrat;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 23px;
+  letter-spacing: 0px;
+  text-decoration: line-through;
+}
+
+.price-aft {
+  display: flex;
+  color: #3d8168;
+  font-family: Fraunces;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 32px;
+  letter-spacing: 0px;
+  padding-right: 20px;
+}
+
+.cart {
+  background-color: #3d8168;
+  width: 295px;
+  height: 48px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  align-content: center;
+}
+
+.cart-text {
+  color: #ffffff;
+  font-family: Montserrat;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 100%;
+  letter-spacing: 0px;
+  padding-left: 15px;
+}
