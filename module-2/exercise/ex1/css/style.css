@@ -63,10 +63,8 @@ body {
   background-color: #ffffff;
   border: 1px solid #111111;
   box-shadow: 8px 8px 0px 0px #000000;
-  width: 280px;
+  width: 327px;
   height: 501px;
-  top: 156px;
-  left: 24px;
   gap: 24px;
   border-radius: 20px;
   border-width: 1px;
@@ -76,7 +74,6 @@ body {
 .blog-image {
   width: 279;
   height: 200;
-  border-radius: 10px;
 }
 
 .content: {
@@ -142,4 +139,46 @@ body {
   font-weight: 800;
   line-height: 150%;
   letter-spacing: 0%;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .container {
+    width: 384px;
+    height: 522px;
+  }
+
+  .content {
+    width: 336px;
+    height: 194px;
+  }
+  content-tag {
+    width: 336px;
+    height: 194px;
+  }
+  content-tag-text {
+    width: 336px;
+    height: 194px;
+    gap: 12px;
+  }
+  .blog-image {
+    width: 336px;
+    height: 200px;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
 }
