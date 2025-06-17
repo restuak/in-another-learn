@@ -1,0 +1,220 @@
+@import url("https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700;800&display=swap");
+
+/* =========================================================================== */
+/* NORMAL DISPLAY*/
+/* =========================================================================== */
+/* BODY*/
+.yellow-col {
+  background-color: #f4d04e;
+}
+
+.position {
+  justify-items: center;
+  padding: 5%;
+}
+
+/* CONTAINER */
+.container {
+  background-color: #ffffff;
+  border: 1px solid #111111;
+  box-shadow: 8px 8px 0px 0px #000000;
+  width: 280px;
+  height: 490px;
+  gap: 24px;
+  border-radius: 20px;
+  border-width: 1px;
+  padding: 24px;
+  display: flex;
+  align-content: space-between;
+  align-items: stretch;
+  justify-items: stretch;
+  flex-wrap: nowrap;
+  flex-direction: column;
+}
+
+.blog-image {
+  width: 279px;
+  height: 200px;
+}
+
+.blog-image-2 {
+  width: 336px;
+  height: 200px;
+}
+
+/* CONTENT */
+.content: {
+  width: 279px;
+  height: 173px;
+  gap: 12px;
+}
+
+.content-tag {
+  background-color: #f4d04e;
+  width: 70px;
+  height: 26px;
+  border-radius: 4px;
+  padding-top: 4px;
+  padding-right: 0px;
+  padding-bottom: 4px;
+  padding-left: 12px;
+}
+
+.content-tag-text {
+  font-family: Figtree;
+  font-weight: 800;
+  font-size: 12px;
+  line-height: 0%;
+  letter-spacing: 0%;
+}
+
+.content-date {
+  font-family: Figtree;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 150%;
+  letter-spacing: 0%;
+}
+
+.content-title {
+  font-family: Figtree;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 150%;
+  letter-spacing: 0%;
+}
+
+.content-isi {
+  font-family: Figtree;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 150%;
+  letter-spacing: 0%;
+  color: #6b6b6b;
+}
+
+/* AUTHOR */
+.author {
+  display: flex;
+  align-items: center;
+  width: 129;
+  height: 32;
+  gap: 12px;
+}
+
+.author-name {
+  font-family: Figtree;
+  font-weight: 800;
+  line-height: 150%;
+  letter-spacing: 0%;
+}
+
+/* =========================================================================== */
+/* HOVER*/
+/* =========================================================================== */
+.content-title:hover,
+.content-title:active {
+  color: #f4d04e;
+  cursor: pointer;
+}
+
+/* =========================================================================== */
+/* RESPOSIVE DISPLAY */
+/* =========================================================================== */
+/* (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .blog-image-2 {
+    display: none;
+  }
+}
+
+/* (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .blog-image-2 {
+    display: none;
+  }
+}
+
+/* (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .container {
+    width: 335px;
+    height: 522px;
+  }
+  .blog-image {
+    display: none;
+  }
+  .blog-image-2 {
+    display: flex;
+    width: 336px;
+    height: 200px;
+  }
+  .content-tag-text {
+    font-size: 14px;
+  }
+  .content-date {
+    font-size: 14px;
+  }
+  .content-title {
+    font-size: 24px;
+  }
+  .content-isi {
+    font-size: 16px;
+  }
+}
+
+/* (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .container {
+    width: 335px;
+    height: 522px;
+  }
+  .blog-image {
+    display: none;
+  }
+  .blog-image-2 {
+    display: flex;
+    width: 336px;
+    height: 200px;
+  }
+  .content-tag-text {
+    font-size: 14px;
+  }
+  .content-date {
+    font-size: 14px;
+  }
+  .content-title {
+    font-size: 24px;
+  }
+  .content-isi {
+    font-size: 16px;
+  }
+}
+
+/* (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .container {
+    width: 335px;
+    height: 522px;
+  }
+  .blog-image {
+    display: none;
+  }
+  .blog-image-2 {
+    display: flex;
+    width: 336px;
+    height: 200px;
+  }
+  .content-tag-text {
+    font-size: 14px;
+  }
+  .content-date {
+    font-size: 14px;
+  }
+  .content-title {
+    font-size: 24px;
+  }
+  .content-isi {
+    font-size: 16px;
+  }
+}
