@@ -11,8 +11,8 @@ export default function Home() {
         <img src="./img/bg.png" alt="Background" className="image grad-bg" />
 
         {/* Content */}
-        <div className="relative flex flex-col items-center pt-4 px-4 ">
-          {/* TITLE */}
+        <div className="relative flex flex-col items-center pt-4 px-4 md:pt-17">
+          {/* Title */}
           <div className="flex justify-between items-center w-[325px] max-w-xl text-white mb-8 md:w-[540px]">
             <p className="josefin-tit">TODO</p>
             <button>
@@ -109,7 +109,6 @@ export default function Home() {
               <li></li>
             </ul>
 
-            {/* Filter/Footer */}
             <div className="josefin-create flex justify-between items-center p-4 gap-4">
               <span>5 items left</span>
               <div className="max-sm:hidden md:flex justify-center gap-4">
