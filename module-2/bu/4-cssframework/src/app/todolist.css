@@ -1,0 +1,83 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap");
+
+@layer utilities {
+  .josefin-tit {
+    font-family: "Josefin Sans";
+    font-weight: 700;
+    font-size: 40px;
+    letter-spacing: 15px;
+    color: #ffffff;
+  }
+}
+@layer utilities {
+  .josefin-create {
+    font-family: "Josefin Sans";
+    font-weight: 400;
+    font-size: 12px;
+    letter-spacing: -0.17px;
+    color: #9495a5;
+  }
+}
+@layer utilities {
+  .josefin-list {
+    font-family: "Josefin Sans";
+    font-weight: 400;
+    font-size: 12px;
+    letter-spacing: -0.17px;
+    color: #494c6b;
+  }
+}
+@layer utilities {
+  .josefin-list2 {
+    font-family: "Josefin Sans";
+    font-weight: 400;
+    font-size: 12px;
+    letter-spacing: -0.17px;
+    color: #d1d2da;
+    text-decoration: line-through;
+  }
+}
+@layer utilities {
+  .josefin3 {
+    font-family: "Josefin Sans";
+    font-weight: 400;
+    font-size: 12px;
+    letter-spacing: -0.17px;
+    color: #494c6b;
+  }
+}
+
+@layer utilities {
+  .josefin-bot {
+    font-family: "Josefin Sans";
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 100%;
+    letter-spacing: -0.19px;
+    color: #9495a5;
+  }
+}
+
+@layer components {
+  .image {
+    @apply absolute w-[175px] h-[200px];
+    @apply md:relative w-[325px] md:h-[250px];
+    @apply lg:relative w-full lg:h-[300px];
+    @apply xl:relative w-full xl:h-[300px];
+  }
+}
+
+@layer components {
+  .grad-bg {
+    @apply absolute bg-gradient-to-tr from-[#AC2DEB] to-[#5596FF];
+  }
+}
+@layer components {
+  .grad {
+    @apply absolute bg-gradient-to-tr from-[#AC2DEB] to-[#5596FF];
+  }
+}
+

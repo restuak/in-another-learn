@@ -9,12 +9,11 @@ export default function Counter() {
   const handleIncrement = () => {
     setCount(count + 1);
   };
+
   return (
     <div className="container flex flex-col justify-center items-center mr-auto ml-auto">
       <p>You clicked {count} times</p>
-      <Button onClick={handleIncrement}>
-        Increment Button
-      </Button>
+      <Button onClick={handleIncrement}>Increment</Button>
     </div>
   );
 }
